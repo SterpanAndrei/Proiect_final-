@@ -46,12 +46,14 @@ def executare_biblioteca():
             returneaza_carte(id_carte)
             print("Cartea a fost returnata.")
         elif optiune == "6":
-            id_carte = int(input("ID casrte de sters: "))
+            id_carte = int(input("ID carte de sters: "))
             sterge_carte(id_carte)
-            print("Cartea a fost stearsa.")
+            print("Cartea a fost stearsă.")
+        elif optiune.lower() == "x":
+            print("La revedere!")
             break
         else:
-            print("Valoare incorecta.")
+            print("Valoare incorectă.")
 
 if __name__ == "__main__":
     executare_biblioteca()
